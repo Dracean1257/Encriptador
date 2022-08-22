@@ -1,0 +1,95 @@
+body{
+    background-color: #27903a;
+	background-image: url(../Recurses/leitmotiv.svg);
+	background-repeat: repeat;
+	background-attachment: fixed;
+	background-size: all;
+}
+
+section{
+	position: relative;
+    margin-left: auto;
+    margin-right: auto;
+	margin-top: 2%;
+	width: 700px;
+	height: 650px;
+	border-radius: 20px;
+	display: grid;
+	background-color: #cbe2a6;
+    font-family: Agency FB;
+}
+
+.titlespace{
+    margin-top: 5%;
+    margin-left: auto;
+    margin-right: auto;
+    width: 55%;
+    height: 40%;
+    background: rgb(189,115,18);
+    background: linear-gradient(90deg, rgba(189,115,18,1) 0%, rgba(233,147,40,1) 70%, rgba(251,176,111,1) 100%);
+    border: 5px solid #886105;
+    border-radius: 50px;
+}
+
+.titulo{
+    margin-top: 0%;
+    color: #146211;
+    text-align: center;
+    font-size: 400%;
+}
+
+.legends{
+    margin-left: 5%;
+    font-weight: bold;
+    font-size: 120%;
+}
+
+.inputs{
+    width: 30%;
+    height: 15%;
+    border-radius: 20px;
+    border-color: #ffc77d;
+    background-color: #faebd7;
+}
+
+button{
+    width: 15%;
+    height: 20%;
+    margin-left: 7%;
+    border-width: 2px;
+    border-radius: 20px;
+    border-color: #005198;
+    background-color: #0088ff;
+    color: #ebf6ff;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button:hover{
+    border-color: #0088ff;
+    background-color: #ebf6ff;
+    color: #0088ff;
+}
+
+textarea{
+    position: absolute;
+    margin-top: 25%;
+    margin-left: 60%;
+    width: 30%;
+    height: 60%;
+    resize: none;
+}
+
+#copy{
+    margin-top: 37%;
+    margin-left: 70%;
+    width: 10%;
+    height: 10%;
+}
+
+.explains{
+    border-width: 3px;
+    border-radius: 20px;
+    border-color: #ffc77d;
+    background-color: #faebd7;  
+}
