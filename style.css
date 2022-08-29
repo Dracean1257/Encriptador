@@ -1,9 +1,8 @@
 body{
     background-color: #27903a;
-	background-image: url(../Recurses/leitmotiv.svg);
+	background-image: url(Recurses/leitmotiv.svg);
 	background-repeat: repeat;
-	background-attachment: fixed;
-	background-size: all;
+	background-size: 7%;
 }
 
 section{
