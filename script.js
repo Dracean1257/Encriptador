@@ -1,17 +1,26 @@
-//La letra "e" es convertida para "enter"
-//La letra "i" es convertida para "imes"
-//La letra "a" es convertida para "ai"
-//La letra "o" es convertida para "ober"
-//La letra "u" es convertida para "ufat"
-
-const primetext = document.querySelector(".inputs");
-const showtext = document.querySelector(".explains");
+const primetext = document.querySelector('.inputs');
+const showtext = document.querySelector('.explains');
 const EncButton = document.getElementById('.enc');
 const DsEncButton = document.getElementById('.desenc');
 const CpButton = document.getElementById('.copy');
+var intext;
 
-function Call(){
-    EncButton.addEventListener('click',function Encrypt(text){
+function ECall(){
+        intext = Encrypt(primetext.value);
+        showtext.value = intext;
+}
+
+function DCall(){
+    intext = Decrypt(primetext.value);
+        showtext.value = intext;
+}
+
+function CCall(){
+    showtext.select();
+    navigator.clipboard.writeText(showtext.value);
+}
+
+function Encrypt(text){
         let cod = [["e","enter"],["i","imes"],["a","ai"],["o","ober"],["u","ufat"]];
         text = text.toLowerCase();
     
@@ -21,10 +30,7 @@ function Call(){
             }
         }
         return text;
-    });
 }
-
-
 
 function Decrypt(text){
     let cod = [["enter","e"],["imes","i"],["ai","a"],["o","ober"],["u","ufat"]];
@@ -36,9 +42,4 @@ function Decrypt(text){
         }
     }
     return text;
-}
-
-function Copy(){
-    showtext.select();
-    navigator.clipboard.writeText(showtext.value);
 }
